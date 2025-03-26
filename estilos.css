@@ -1,0 +1,55 @@
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-radius: 5px 5px 0 0; /* Añade bordes redondeados en la parte superior de la imagen */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: 1px solid #ddd; /* Añade un borde sutil a las tarjetas */
+    border-radius: 5px; /* Añade bordes redondeados a las tarjetas */
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan de las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave al hacer hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta al hacer hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra al hacer hover */
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    padding: 15px; /* Añade un espacio interno al cuerpo de la tarjeta */
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    font-size: 1.25rem; /* Tamaño del título */
+    margin-bottom: 0.75rem; /* Espacio debajo del título */
+}
+
+/* Estilos para el texto de la tarjeta */
+.card-text {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555; /* Color del texto */
+}
+
+/* Estilos para la galería de imágenes */
+.row.mt-4 {
+    margin-top: 1.5rem !important; /* Asegura un espacio adecuado entre las filas */
+}
+
+/* Estilos para las columnas de la galería */
+.col-md-6.mb-4 {
+    margin-bottom: 1.5rem !important; /* Asegura un espacio adecuado entre las columnas */
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 767.98px) {
+    .card-img-top {
+        height: 200px; /* Ajusta la altura de las imágenes en dispositivos móviles */
+    }
+}
+
